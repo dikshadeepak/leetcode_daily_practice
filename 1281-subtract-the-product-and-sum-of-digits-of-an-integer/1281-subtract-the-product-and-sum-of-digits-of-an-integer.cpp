@@ -4,13 +4,14 @@ public:
         
         int s=0;
         int p=1;
-        while(n!=0){
+        while(n>0){
             int num=n%10;
             s=s+num;
             p=p*num;
             n=n/10;
         }
-        int sol=p-s;
-        return sol;
+       // (if p<s) return ;
+        //int sol=p-s;
+        return p-s;
     }
 };
